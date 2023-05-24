@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+README.md</font>
+</center></td></tr></table>
+<pre><span class="s0"># </span><span class="s2">Pac-Man</span>
+
+<span class="s2">What will the application do?</span>
+
+<span class="s2">The application will simulate the game Pac-Man. </span>
+<span class="s2">The game will include the usual mechanics seen in </span>
+<span class="s2">regular Pac-Man, and a few added features to make the</span>
+<span class="s2">game more interesting.</span>
+
+<span class="s2">Who will use it?</span>
+
+<span class="s2">Since I am designing a video game, the audience will be </span>
+<span class="s2">video game players.</span>
+
+<span class="s2">Why is this project of interest to you?</span>
+
+<span class="s2">I've always wanted to work on a personal video game that </span>
+<span class="s2">has elements designed and implemented personally. Previously, </span>
+<span class="s2">I've designed Snake, and a 2D sand simulator in Java with </span>
+<span class="s2">help from either videos, or other people. Pac-Man will be</span>
+<span class="s2">my first true solo project designed from scratch.</span>
+
+<span class="s0">## </span><span class="s2">User Stories</span>
+<span class="s0">- </span><span class="s2">As a user, I want a map that features Pac-Man</span>
+<span class="s0">- </span><span class="s2">As a user, the map needs to have walls, and pellets</span>
+<span class="s0">- </span><span class="s2">As a user, Pac-Man needs to be able to collide with the walls</span>
+<span class="s0">- </span><span class="s2">As a user, touching a ghost will kill me</span>
+<span class="s0">- </span><span class="s2">As a user, I want to be able to collect pellets</span>
+<span class="s0">- </span><span class="s2">As a user, these pellets need to give me points</span>
+<span class="s0">- </span><span class="s2">As a user, I want to be able to move as Pac-Man</span>
+<span class="s0">- </span><span class="s2">As a user, I want ghosts chasing after me</span>
+<span class="s0">- </span><span class="s2">As a user, I want items on the map that will power up Pac-Man</span>
+<span class="s0">- </span><span class="s2">As a user, I want my score added to the scoreboard</span>
+<span class="s0">- </span><span class="s2">As a user, I want multiple lives with Pac-Man</span>
+<span class="s0">- </span><span class="s2">As a user, the game will rerun once all the pellets are gone.</span>
+<span class="s0">- </span><span class="s2">As a user, the game requires a save and quit option</span>
+<span class="s0">- </span><span class="s2">As a user, the game will load back my previous save</span>
+ 
+<span class="s0">## </span><span class="s2">Instruction for Grader</span>
+
+<span class="s0">- </span><span class="s2">You can generate the first required action related to adding Xs to a Y by pressing </span>
+<span class="s2">the button </span><span class="s1">&quot;</span><span class="s2">add Ghost</span><span class="s1">&quot;</span><span class="s2">, you will add another ghost into the game.</span>
+<span class="s2">That ghost will behave like all the previous ghosts at the beginning of the game. </span>
+
+
+<span class="s0">- </span><span class="s2">You can generate the second required action related to adding Xs to a Y by pressing the arrow keys to</span>
+<span class="s2">move around in the game. It has the same rules as pac man. There's </span>
+<span class="s2">also added hotkeys for the three buttons above. pressing A will add Ghosts, S to save, and L to load.</span>
+
+
+<span class="s0">- </span><span class="s2">You can locate my visual component by looking in the Images file. Located above the lib folder </span>
+<span class="s2">and below the data folder.</span>
+
+
+<span class="s0">- </span><span class="s2">You can save the state of my application by either press S or click the Save button.</span>
+
+
+<span class="s0">- </span><span class="s2">You can reload the state of my application by either press L or click the Load button.</span>
+
+<span class="s0">## </span><span class="s2">Phase 4</span><span class="s1">: </span><span class="s2">Task 2</span>
+
+<span class="s2">User adds ghost to game</span><span class="s1">*</span>
+
+<span class="s2">EventLog logs </span><span class="s1">&quot;</span><span class="s2">added to the map</span><span class="s1">&quot;</span>
+
+<span class="s2">User removes ghost to game</span><span class="s1">*</span>
+
+<span class="s2">EventLog logs </span><span class="s1">&quot;</span><span class="s2">removed from the map</span><span class="s1">&quot;</span>
+
+<span class="s2">To get the log to print in the end, press E to save and exit with the log, another way to exit is by pressing f4,</span>
+<span class="s2">which will only exit and print the log without saving. Closing the window itself will not execute the print log function </span>
+<span class="s2">and nothing will happen.</span>
+
+<span class="s0">## </span><span class="s2">Phase 4</span><span class="s1">: </span><span class="s2">Task 3</span>
+
+<span class="s2">The design of the models is a class on the very top with</span>
+<span class="s2">associations to every other model. The PacManGame class initializes PacMan, </span>
+<span class="s2">Ghost, Pellets, Walls, and PowerUps. If there was time to </span>
+<span class="s2">refactor certain parts of the code, I would create an intermediate class that </span>
+<span class="s2">creates the board of PacMan instead of doing all that within the PacManGame class. Another </span>
+<span class="s2">possible refactor is creating a game board that is complied of walls, pellets, and powerUps classified by</span>
+<span class="s2">numbers 1, 2, and 3. The point is to make a faster functioning code that can make walls detection a lot faster. The </span>
+<span class="s2">current code loops through every wall and pellet to see if PacMan can interact with it. For a smaller map, the </span>
+<span class="s2">code would be viable, but as the maps increase in size. Each tick significantly increase the memory usage. A refactor </span>
+<span class="s2">that can remove the loop through the implementation of an intermediate board class would reduce the</span>
+<span class="s2">lag and memory usage for this PacManGame model. The Position class also could've had an override equal method, so instead</span>
+<span class="s2">of calling the X and Y positions of Position to compare the 2 Positions I can just have a method that checks for equals.</span>
+
+</pre>
+</body>
+</html>
